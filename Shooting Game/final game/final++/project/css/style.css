@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'Satisfy';
+    src: url(../fonts/Satisfy-Regular.ttf) ;
+}
+body{
+    background-image: url("../images/bg (1).png");
+}
+.logo{
+    margin-left: 45%;
+    margin-top:4%;
+    border:3px solid green;
+    border-radius: 60px;
+}
+h1{
+    text-transform: capitalize;
+    color: tomato;
+    letter-spacing: .3rem;
+    margin-left: 40%;
+    margin-top: 2%;
+    font-family: 'Satisfy', cursive;
+    font-size:45px;
+}
+h1:hover
+{  
+    color:green;
+
+
+}
+h3{
+    font-family:  cursive;
+    color:white;
+    padding-left:42%;
+    padding-top:2%;
+    font-size: 30px;
+    text-transform:capitalize;
+
+}
+
+/*.container
+{
+    width: 700px;
+    height: 500px;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 3%;
+    background-image: url("../images/bg.png");
+   
+   
+}
+}*/
+.mode{
+    width: 500px;
+    height: 200px;
+
+    margin-left:39%;
+    margin-top:2%;
+  
+}
+.mode button , #add{
+    border:1px sold white;
+    background-color: tomato;
+    border-radius: 25px;
+    margin-right: 5%;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+   outline:0;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+       
+}
+.mode button:hover{
+   background-color:white;
+   color: green;
+   text-decoration: underline;
+   border:3px sold white;
+   font-size: 20px;
+   width: 150px;
+   outline:0;
+
+ 
+   }
+   span{
+       color: tomato;
+       font-size: 35px;
+       text-decoration: underline;
+   }
+   .user{
+       display: none;
+       margin-left: 33%;
+       margin-top:10%;
+       width: 500px;
+       height: 250px;
+       border:2px solid white;
+       border-radius: 20px;
+       border-top-left-radius:30%;
+       border-bottom-right-radius: 30%;
+       
+   }
+   input[type="text"]
+   {
+        margin-left: 15%;
+        margin-top: 10%;
+        border: 0;
+        border-bottom:1px solid tomato;
+        width:60%; 
+        height: 50px;
+        color: tomato;
+        font-size: 30px;
+        background-color: transparent;
+       
+        outline: none;
+        opacity: 0.6;
+        
+   }
+   input[type="text"]:hover{
+       cursor: pointer;
+   }
+
+  #add{
+      margin-top: 20%;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: 20px
+  }
+  .play{
+      display: none;
+  }
+  .userdata{
+      width: 200px;
+      height: 30px;
+      border-bottom:2px solid tomato;
+     font-family: monospace;
+      float:right;
+      color:white;
+      margin-right: 10%;
+     text-transform: capitalize;
+      background-color: transparent;
+      font-size: 30px;
+     
+  }
+  #timer{
+     
+      float: left;
+      width: 100px;
+      border:1px solid white;
+      border-radius: 50px;
+      color:tomato;
+      font-size: 30px;
+      margin-left: 50px;
+      padding-left: 35px
+
+  }
+  .gameover{
+      display: none;
+      width: 100px;
+      height:100px;
+     
+      margin-left: 40%;
+
+  }
+  .score{
+      
+      color:green;
+      font-family:'Satisfy', cursive;
+      font-size: 50px;
+      margin-top:6%;
+     
+     
+  }
+  .score:hover{
+         
+                 color:tomato;
+
+  }
+ 

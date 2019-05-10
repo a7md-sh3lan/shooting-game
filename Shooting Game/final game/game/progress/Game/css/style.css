@@ -1,0 +1,89 @@
+*{
+	padding:0;
+	margin:0;
+}
+/* Start Container Div of The Whole Game */
+
+.container{
+	width:500px;
+	height:650px;
+	border:5px solid #000;
+	margin:0 auto;
+	position:relative;
+	overflow:hidden;
+	padding-left:15px;
+}
+
+/* End Container Div of The Whole Game */
+
+
+/* Start The Line Div which contain Blocks */
+
+.line{
+	display:block;
+	position:absolute;
+	top:5px;
+}
+.test3
+{
+	display:  block;
+	position: relative;
+	width: 500px;
+}
+.test2
+{
+	display: block;
+	position: absolute;
+	top: -150px;
+}
+/* img
+{
+	position: absolute;
+} */
+.container .line .child,
+.container .shooter{
+	float:left;
+	width:50px;
+	height:30px;
+	background-color:#F00;
+	margin:5px;
+}
+
+/* End The Line Div which contain Blocks */
+
+
+/* Start The Shooter Div */
+
+.container .shooter{
+	position:absolute;
+	left:230px;
+    bottom:10px;
+    background-color:#00F;
+}
+
+/* End The Shooter Div */
+
+
+.container .shoot{
+	display:none;
+	width:13px;
+	height:13px;
+	border-radius:50%;
+	background-color:#000;
+	position:absolute;
+	bottom:41px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

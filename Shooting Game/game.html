@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Shoot Game</title>
+		<meta chareset="UTF-8" />
+		<!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
+		<link rel="stylesheet" href="css/style.css" />
+ 	</head>
+	<body>
+
+		<!-- Start The Landing Page -->
+
+		<div class="landingPage">
+			<h1>Shooting Box</h1>
+			<div class="select">
+				<h3 class="easy">Easy</h3>
+				<h3 class="normal">Normal</h3>
+				<h3 class="instructions">Instructions</h3>
+			</div>
+			<div class="instruct">
+				<p>
+					<span>Welcome To The Shooting Game!</span><br>
+					1- Help The Little Rocky To Avoid This Blocks so he can resume his space journey<br>
+					2- use both Right and Left arrows to navigate <br>
+					3- use space button to shoot the blocks <br>
+					4- shoot the Orange blocks and get triple score <br>
+					5- Shoot The Red For Surprise <br> 
+				</p>
+				<button>X</button>
+			</div>
+		</div>
+
+
+		<!-- End The Landing Page -->
+
+
+
+		<!-- Start The Div Which contain mode-->
+
+		<div class="start">
+			<input type="text" placeholder="Enter Your Name" />
+			<button class="add" disabled>Start</button>
+		</div>
+
+		<!-- End The Div Which contain mode-->
+
+
+
+
+		
+		<!-- Start the main div of game -->
+
+		<div class=game>
+
+			<!-- Start the Div Of Blocks -->
+
+			<div class="container">
+				<div id="main" class="line">
+	                <div class="parent2"><div class="child"></div></div>
+	                <div class="parent2"><div class="child"></div></div>
+	                <div class="parent2"><div class="child"></div></div>
+	                <div class="parent2"><div class="child"></div></div>
+	                <div class="parent2"><div class="child"></div></div>
+	                <div class="parent2"><div class="child"></div></div>
+	                <div class="parent2"><div class="child"></div></div>
+	                <div class="parent2"><div class="child"></div></div>
+	                <div class="parent2"><div class="child"></div></div>
+	                <div class="parent2"><div class="child"></div></div>
+	                <div class="parent2"><div class="child"></div></div>
+	                <div class="parent2"><div class="child"></div></div>
+	                <div class="parent2"><div class="child"></div></div>
+	                <div class="parent2"><div class="child"></div></div>
+				</div>
+
+				<div class="shooter"></div>  <!--The div which is responsible about shoot the block -->
+
+			</div>
+
+			<!-- Start the Div Of Blocks -->
+		
+
+			<!-- Start the info about the player -->
+
+			<div class="info">
+				<div class="time">
+					<h2>Timer</h2>
+					<h1 id="one" class='timer' style='color:#FFF' data-minutes-left=1></h1>
+					<h1 id="two" class='timer' style='color:#FFF' data-minutes-left=2></h1>
+				</div>
+				<div class="name">
+					<h2>Player Name</h2>
+					<h4></h4>
+				</div>
+				
+				<div class="score">
+					<h2>Score</h2>
+					<span>0</span>
+				</div>
+			</div>
+
+			<!-- End the info about the player -->
+ 
+
+		</div>
+
+		<!-- End the main div of game -->
+
+
+		<!--The div when he lose -->
+		<div class="gameOver">
+			<h2>Game Over</h2>
+			<h4>You Lose</h4>
+			<h3>Your Score: ( <span></span> )</h3>
+			<button>Play Again</button>
+		</div> 
+
+		<!--The div when he win -->
+		<div class="congratulation">
+			<h2>Congratulations</h2>
+			<h4>You Win</h4>
+			<h3>Your Score: ( <span></span> )</h3>
+			<button>Play Again</button>
+		</div>
+
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.simple.timer.js"></script>
+		<script src="js/jquery-collision.min.js"></script>
+        <script src="js/script.js"></script>
+	</body>
+</html>

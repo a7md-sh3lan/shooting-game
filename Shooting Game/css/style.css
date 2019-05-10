@@ -1,0 +1,386 @@
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	background-image:url('../images/galaxy.png');
+	font-family:'Roboto', sans-serif;
+	perspective:100px;
+}
+.game{
+	display:none;
+}
+.mode{
+	display:none
+}
+.start{
+	display:none
+}
+/* Start The Landing Page */
+
+.landingPage{
+	color:#FFF;
+    font-size:33px;
+    margin:0 auto;
+    width:500px;
+    margin-top:130px;
+    text-align:center;
+    perspective:100px
+}
+.landingPage h1{
+	margin-bottom:80px;
+}
+.landingPage .select h3{
+	margin-bottom:30px;
+	color:#ffc0c2;
+	font-size:40px;
+	background-color:#20716a;
+    width: 300px;
+    margin-left: 103px;
+    border-radius: 37px;
+    padding:3px 0;
+    color:#f7de1c;
+}
+.landingPage .select h3:hover{
+	cursor:pointer;
+	transform:translateZ(-5px);
+	color:#20716a;
+	background-color:#f7de1c;
+}
+.landingPage .instruct{
+	width:569px;
+    height:425px;
+    background-color:#fffe9a;
+    border-radius:20px;
+    position:absolute;
+    top:-45px;
+    left:10px;
+    overflow:hidden;
+    color:#000;
+    display:none;
+    text-align:left
+}
+.landingPage .instruct p{
+	width:479px;
+    height:376px;
+    border-radius:32px;
+    position:absolute;
+    top:30px;
+    left:23px;
+    overflow:hidden;
+    color:#000;
+    padding:25px;
+    line-height:1.9;
+    font-size:23px;
+}
+.landingPage .instruct p span{
+	color:#f16821;
+	font-size:30px;
+	font-weight:bold;
+}
+.landingPage .instruct button{
+	background: none;
+    border: 0;
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: 24px;
+    top: 15px;
+}
+/* End The Landing Page */
+
+
+/* Start Container Div of The Whole Game */
+
+.container{
+	width:900px;
+	height:650px;
+	position:relative;
+	overflow:hidden;
+	margin-left:100px;
+	float:left;
+}
+
+/* End Container Div of The Whole Game */
+
+
+/* start the div of enter username */
+
+.start
+{
+   width:420px;
+   height:200px;
+   margin:250px auto 0;
+   text-align:center;
+}
+.start input{
+	background: none;
+    border:0;
+    border-bottom:1px solid #FFF;
+    outline:0;
+    width:300px;
+    padding:10px 15px 20px 90px;
+    font-size:30px;
+    color:#FFF;
+    display:block;
+    margin-bottom:50px;
+}
+.start button{
+	padding:10px 47px;
+    border:0;
+    font-size:25px;
+    border-radius:27px;
+    background-color:#20716a;
+    outline:0;
+    color:#f7de1c;
+    font-weight:bold;
+}
+.start button:hover{
+	background-color:#f7de1c;
+	color:#20716a;
+	cursor:pointer;
+}
+/* End the div of enter username */
+
+
+/* Start The Div Which contain The Inforamtion */
+
+.info{
+	float:right;
+	width:250px;
+}
+.info .time{
+	text-align:center;
+    margin-top:30px;
+    font-size:25px;
+}
+.info .time h2{
+	color:#96dae4;
+	margin-bottom:10px;
+}
+.info .time .timer{
+	color:#FFF;
+    font-size:28px;
+    margin-left: 70px;
+}
+
+/* Start The Timer Plugin */
+
+.container {
+  font-size: 100pt;
+  text-align: center;
+}
+.jst-hours {
+  float: left;
+}
+.jst-minutes {
+  float: left;
+}
+.jst-seconds {
+  float: left;
+}
+.jst-clearDiv {
+  clear: both;
+}
+.bodyTimeoutBackground {
+  background: white;
+}
+.timeout {
+  color: red;
+  -webkit-animation-name: blinker;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+  -webkit-animation-duration: 1s;
+}
+@-webkit-keyframes blinker {
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+
+/* End The Timer Plugin */
+
+.info .name{
+	color:#FFF;
+	text-align:center;
+	margin-top:15px;
+	font-size:20px;
+}
+.info .name h2{
+	margin-bottom:15px;
+	color:#96dae4;
+}
+.info .name h4{
+	width:200px;
+	overflow:hidden;
+	margin:0 auto;
+	font-size:22px;
+}
+.info .score{
+	color:#FFF;
+	margin-top:20px;
+	text-align:center;
+	color:#96dae4;
+}
+.info .score h2{
+	font-size:35px;
+	margin-bottom:10px;
+}
+.info .score span{
+	font-size:35px;
+	color:#FFF;
+}
+
+
+/* End The Div Which contain The Inforamtion */
+
+
+/* Start The Line Div which contain Blocks */
+
+.line{
+	display:block;
+	position:absolute;
+	top:-50px;
+}
+
+.container .line .child,
+.container .shooter{
+	float:left;
+	width:50px;
+	height:40px;
+	overflow:hidden;
+	margin:5px;
+	background-image:url("../images/block.png");
+	background-size:cover;
+}
+
+.parent2
+{
+	float: left;
+	width: 51px;
+	height: 31px;
+	margin: 5px;
+}
+/* End The Line Div which contain Blocks */
+
+
+/* Start The Shooter Div */
+
+.container .shooter{
+	position:absolute;
+	left:415px;
+    bottom:1px;
+    height:50px;
+    background-image:url('../images/rocket.png');
+}
+
+/* End The Shooter Div */
+
+/* start the shoot which remove blocks */
+
+.container .shoot{
+	display:none;
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	background-color:#F00;
+	position:absolute;
+	bottom:41px;
+}
+
+/* End the shoot which remove blocks */
+
+
+/* start the game over div and the congratulation div */
+
+.gameOver,.congratulation{
+	display:none;
+	color:#FFF;
+	margin:0 auto;
+	margin-top:0px;
+	width:556px;
+	margin-top:173px;
+	text-align:center;
+	color:#FFF;
+	position:absolute;
+	top:-37px;
+	left:440px;
+	background-color:#222831;
+	height:382px;
+	padding-top:40px;
+	border-radius:45px;
+}
+.gameOver h2,.congratulation h2{
+	font-size:70px;
+    margin-bottom:40px;
+}
+.congratulation h2{
+	font-size:50px;
+}
+.gameOver h4,.congratulation h4{
+	color:#F00;
+    font-weight:bold;
+    font-size:35px;
+}
+.gameOver h3,.congratulation h3{
+	margin-top:25px;
+    font-size:35px;
+}
+.gameOver h3 span,.congratulation h3 span{
+	color:#F00;
+	font-size:30px;
+}
+.gameOver button,.congratulation button{
+	background:#20716a;
+    color:#f7de1c;
+    border:0;
+    outline:0;
+    font-size:35px;
+    margin-top:35px;
+    padding:10px 40px;
+    border-radius:35px;
+}
+.gameOver button:hover,.congratulation button:hover{
+	cursor:pointer;
+	background-color:#f7de1c;
+	color:#20716a;
+	transform:translateZ(-5px);
+}
+/* end the game over div and the congratulation div*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
